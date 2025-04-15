@@ -2,7 +2,7 @@ import styles from "./devis.module.css";
 
 export default function Devis() {
   return (
-    <div className={styles.devisContainer}>
+    <div id="devis" className={styles.devisContainer}>
       <h1 className={styles.title}>Demande de devis</h1>
       <div className={styles.formContainer}>
         <div className={styles.formBlock1}>
