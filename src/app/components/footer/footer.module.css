@@ -1,0 +1,33 @@
+.footerContainer{
+    width:100vw;
+    height:300px;
+    background-color: #353539;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.contactTitle{
+    font-size: 1.8rem;
+    color:#5fcaf8;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.footerBlock1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact{
+    color:#fff;
+    font-size: 1rem;
+    margin-top:10px;
+    font-weight:400
+}
+
+.socialBlock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

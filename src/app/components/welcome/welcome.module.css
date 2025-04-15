@@ -1,0 +1,59 @@
+.welcomeContainer{
+    height:650px;
+    width:100vw;
+    background-image: url('/assets/welcome_bg.jpg');
+    background-position: 100%;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.titleCard{
+    z-index: 99;
+    background-color: #353539;
+    width:500px;
+    display:flex;
+    flex-direction: column;
+    margin-left: 10vw;
+    padding: 40px 50px;
+    position: relative;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideIn 0.8s ease-out forwards;
+}
+
+.slogan{
+    color:#ff914d;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.description{
+    color:#fff;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.subTitleBlock{
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    bottom: -45px;
+    padding: 15px 30px;
+    transform: translateY(-80px);
+    animation: slideIn 0.8s ease-out forwards;
+
+}
+.subTitle{
+    color:#000;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+@keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

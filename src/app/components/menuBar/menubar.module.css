@@ -1,0 +1,38 @@
+.menuContainer{
+    display: flex;
+    align-items: center;
+    width:100%;
+    background-color: #fff;
+    height:80px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position:fixed;
+    top:0;
+    left: 0;
+    margin: 0;
+    z-index: 999;
+}
+.logo{
+    margin-left: 5vw;
+}
+.menuItems{
+    display: flex;
+    justify-content: flex-end;
+    width:50%;
+    min-width: 400px;
+}
+.menuItem{
+    margin-left: 40px;
+    color:#000;
+    font-size: 1.1rem;
+    font-weight: 400;
+    cursor:pointer;
+}
+
+.devisButton{
+    background-color: #5fcaf8;
+    color:#fff;
+    padding: 20px 40px;
+    border:none;
+    margin-left: 5vw;
+    cursor: pointer;
+}
