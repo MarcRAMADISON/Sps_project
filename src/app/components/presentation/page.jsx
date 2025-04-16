@@ -20,7 +20,7 @@ export default function Presentation() {
     }, []);
 
     return (
-        <div className={styles.presentationContainer}>
+        <div className={styles.presentationContainer} id='about'>
             <div className={styles.block1}>
                 <h3 className={styles.title}>Professionnalisme, Efficacité et rapidité</h3>
                 <button className={styles.contactButton}>Contacter nous</button>

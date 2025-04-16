@@ -23,7 +23,7 @@ const servicesList = [
 
 export default function Services() {
   return (
-    <div className={styles.container}>
+    <div id='services' className={styles.container}>
       <h1 className={styles.title}>Nos services</h1>
       <div className={styles.servicesContainer}>
         {servicesList.map((service, index) => {

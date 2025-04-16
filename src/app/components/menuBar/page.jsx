@@ -6,18 +6,38 @@ import { useState } from "react";
 
 const MenuBar = () => {
   const [open, setOpen] = useState(false);
-  const redirect = (e) => {
+  const redirect = (e,type) => {
     e.preventDefault();
-    const target = document.getElementById("devis");
+    if( type === 'DEVIS'){
+      const devis = document.getElementById("devis");
 
-    target.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  };
+      devis.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }else if (type = 'HOME'){
+      const home = document.getElementById("home");
 
-  const handleToggle = () => {
-    setToggleMenuMobile((prev) => !prev);
+      home.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }else if (type === 'SERVICES'){
+      const services = document.getElementById("services");
+
+      services.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    } else if (type === 'ABOUT'){
+      const about = document.getElementById("about");
+
+      about.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+   
   };
 
   return (
@@ -31,11 +51,11 @@ const MenuBar = () => {
           className={style.logo}
         />
         <div className={style.menuItems}>
-          <h3 className={style.menuItem}>Acceuil</h3>
-          <h3 className={style.menuItem}>Nos services</h3>
-          <h3 className={style.menuItem}>Qui sommes nous</h3>
+          <h3 className={style.menuItem} onClick={(e)=>redirect(e,'HOME')}>Acceuil</h3>
+          <h3 className={style.menuItem} onClick={(e)=>redirect(e,'SERVICES')}>Nos services</h3>
+          <h3 className={style.menuItem} onClick={(e)=>redirect(e,'ABOUT')}>Qui sommes nous</h3>
         </div>
-        <button className={style.devisButton} onClick={redirect}>
+        <button className={style.devisButton} onClick={(e)=>redirect(e,'DEVIS')}>
           Demander un devis
         </button>
       </div>
@@ -52,10 +72,10 @@ const MenuBar = () => {
         </div>
         {open && (
           <div className={style.menuBlock}>
-            <h3 className={style.menuItem}>Acceuil</h3>
-            <h3 className={style.menuItem}>Nos services</h3>
-            <h3 className={style.menuItem}>Qui sommes nous</h3>
-            <button className={style.devisButton} onClick={redirect}>
+            <h3 className={style.menuItem} onClick={(e)=>redirect(e,'HOME')}>Acceuil</h3>
+            <h3 className={style.menuItem} onClick={(e)=>redirect(e,'SERVICES')}>Nos services</h3>
+            <h3 className={style.menuItem} onClick={(e)=>redirect(e,'ABOUT')}>Qui sommes nous</h3>
+            <button className={style.devisButton} onClick={(e)=>redirect(e,'DEVIS')}>
               Demander un devis
             </button>
           </div>
