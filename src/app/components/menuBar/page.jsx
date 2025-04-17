@@ -8,6 +8,8 @@ const MenuBar = () => {
   const [open, setOpen] = useState(false);
   const redirect = (e,type) => {
     e.preventDefault();
+    setOpen(false)
+    
     if( type === 'DEVIS'){
       const devis = document.getElementById("devis");
 
@@ -15,7 +17,7 @@ const MenuBar = () => {
         behavior: "smooth",
         block: "start",
       });
-    }else if (type = 'HOME'){
+    }else if (type === 'HOME'){
       const home = document.getElementById("home");
 
       home.scrollIntoView({

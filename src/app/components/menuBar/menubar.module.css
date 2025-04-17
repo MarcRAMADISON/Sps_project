@@ -27,6 +27,7 @@
     font-weight: 400;
     cursor:pointer;
     text-align: left;
+    transition: all 0.3s ease-in
 }
 
 .devisButton{
@@ -94,6 +95,14 @@
   
   .open .bar:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .menuItem:hover{
+    color:#5fcaf8
+  }
+
+  .devisButton:hover{
+    background-color:#77d3fa
   }
 
 @media (max-width: 920px){
