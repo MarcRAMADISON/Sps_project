@@ -88,34 +88,7 @@
     margin-top: 50px;
   }
 
-  .container {
-    overflow-x: auto;
-    white-space: nowrap;
-    scrollbar-height: thin; 
-  }
-  
- 
-  .container::-webkit-scrollbar {
-    height: 8px; 
-  }
-  
-  .container::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-  
-  .container::-webkit-scrollbar-thumb {
-    background: #0070f3; 
-    border-radius: 4px;
-  }
-  
-  .container::-webkit-scrollbar-thumb:hover {
-    background: #005bb5;
-  }
-  
-  .container {
-    scrollbar-width: thin;
-    scrollbar-color: #0070f3 #f1f1f1;
-  }
+
 
   @media (max-width:920px){
     .servicesContainer{
